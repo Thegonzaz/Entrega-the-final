@@ -109,9 +109,16 @@ header{
 
  /* Cursos */
 
+#nuestros-cursos{
+    min-height: 100vh;
+    width: 100%;
+} 
+
 #nuestros-cursos .cursos{
     display: flex; 
     justify-content: center;
+    min-width: 100vh;
+    width: 100%;
 } 
  
 #nuestros-cursos h2{
@@ -255,18 +262,26 @@ header{
    
 
 /* Contacto: */
-.encabezado .title{ 
+.encabezado{
+    background: #ddd;
+}
+
+.encabezado .titulo{ 
     display: flex; 
     justify-content: center; 
     align-items: center;
     font-size: 2em;
-    padding-top: 80px;
+    padding: 50px;
+    font-weight: bold;
+    background: #ddd;
 } 
 
 .contactUs{
     position: relative; 
     width: 100%;
-    padding: 40px 100px;
+    min-height: 100vh;
+    padding: 0 100px;
+    background-color: #ddd;
 } 
  
 
@@ -304,7 +319,7 @@ footer {
     grid-template-areas: 
     "form info";
     grid-gap: 20px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
  
 .form h3{
