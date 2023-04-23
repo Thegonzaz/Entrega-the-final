@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Home</title>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 
@@ -13,7 +15,7 @@
     <header>
         <div class="container-nav">
             <a class="logo" href="index.html">
-                <div>MyPage</div>
+                <div>Gym Page</div>
             </a>
         </div>
         <nav class="nav-bar">
@@ -24,17 +26,34 @@
         </nav>
     </header>
 
-    <section id="fondo">
-        <h1>Ven y crea<br>Websites</h1>
-        <button>Aplica YA!</button>
-    </section>
-
-    <main>
-        <h2 class="subt">Esta es <span class="color-acento">MyPage!</span></h2>
-        <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet expedita alias molestiae deserunt
-                    magnam voluptatem quidem sequi impedit dolores, tenetur unde, mollitia enim exercitationem error
-                    obcaecati assumenda non ipsa dolor.</p>
+    <main class="home padd">
+        <img class="img-slide active" src="/Img/5.jpg">
+        <img class="img-slide" src="/Img/9.jpg">
+        <img class="img-slide" src="/Img/7.jpg">
+        <div class="content active">
+            <h1>Transforma tu <br><span>Vida</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit vel error magni asperiores, blanditiis sunt a sapiente aspernatur corrupti ut minus alias ullam accusantium, maiores necessitatibus excepturi! Pariatur natus veritatis aliquid beatae repellat quasi consequatur perferendis sint enim officia minus quibusdam eos molestias ut quaerat soluta placeat obcaecati provident tempore quae cupiditate veniam impedit, fugiat vitae? Necessitatibus harum modi cumque provident similique, ipsum ipsam ab quo atque, quos quae, minima labore repellat numquam earum debitis vitae! Quidem, harum dignissimos.</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="content">
+            <h1>Tu viaje personalizado hacia <br><span>la Salud y el Fitness</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit vel error magni asperiores, blanditiis sunt a sapiente aspernatur corrupti ut minus alias ullam accusantium, maiores necessitatibus excepturi! Pariatur natus veritatis aliquid beatae repellat quasi consequatur perferendis sint enim officia minus quibusdam eos molestias ut quaerat soluta placeat obcaecati provident tempore quae cupiditate veniam impedit, fugiat vitae? Necessitatibus harum modi cumque provident similique, ipsum ipsam ab quo atque, quos quae, minima labore repellat numquam earum debitis vitae! Quidem, harum dignissimos.</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="content">
+            <h1>Reta a tu <span>Cuerpo</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit vel error magni asperiores, blanditiis sunt a sapiente aspernatur corrupti ut minus alias ullam accusantium, maiores necessitatibus excepturi! Pariatur natus veritatis aliquid beatae repellat quasi consequatur perferendis sint enim officia minus quibusdam eos molestias ut quaerat soluta placeat obcaecati provident tempore quae cupiditate veniam impedit, fugiat vitae? Necessitatibus harum modi cumque provident similique, ipsum ipsam ab quo atque, quos quae, minima labore repellat numquam earum debitis vitae! Quidem, harum dignissimos.</p>
+            <a href="#">Leer más</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
         </div>
     </main>
 
@@ -43,6 +62,7 @@
             <p>&copy; Mypage 2023</p>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

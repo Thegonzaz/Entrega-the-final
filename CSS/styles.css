@@ -1,8 +1,10 @@
-*{ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none !important;
 } 
@@ -77,74 +79,171 @@ header{
     }
 }
 
-/* Container */
-
  /* Index html */
-
-#fondo h1{
-    text-shadow: 0 0 3px black, 0 0 5px black;
-} 
-
-#fondo{
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    text-align: center; 
-    flex-direction: column;
-    height: 100vh; 
-    color: white; 
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5), 
-        rgba(0,0,0,0.5)
-    ) 
-    ,url("../BodytechCll90_I0A8361_0004-1.webp");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center center;   
+.padd{
+    padding: 100px 200px;
 }
 
-.subt{ 
-    text-align: center; 
-    justify-content: center;
-    flex-direction: column;
-} 
- 
-.color-acento{ 
-    color: aqua
-}
-
- /* Cursos */
-.encabezado-cursos .titulo{ 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    font-size: 2em;
-    padding: 50px;
-    font-weight: bold;
-    background: #ddd;
-} 
-
-#nuestros-cursos{
+.home{
+    position: relative;
+    width: 100%;
     min-height: 100vh;
-    width: 100%;
-} 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #11101b ;
+}
 
-#nuestros-cursos .cursos{
-    display: flex; 
-    justify-content: center;
-    min-width: 100vh;
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(251, 3, 3, 0.034);
     width: 100%;
-} 
- 
-#nuestros-cursos h2{
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    padding-bottom: 100px;
+    display: none;
+}
+
+.home .content.active{
+    display: block;
+}
+
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+}
+
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: #11101b;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.home .content a:hover{
+    background: #11101b;
+    color: #fff;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    display: block;
+    transform: scale(1.3);
+    color: #11101b;
+}
+
+.home img{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn:active{
+    background: #11101b;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+}
+
+.img-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+@media screen and (max-width: 900px){
+    .home{
+        margin-top: 45px;
+    }
+    .home .content h1{
+        font-size: 3em;
+        line-height: 60px;
+    }
+    .home .content{
+        width: 90%;
+        padding-bottom: 0;
+    }
 }
 
  /* Nosotros */ 
-
-
 .section{
     width: 100%;
     min-height: 100vh;
@@ -184,18 +283,18 @@ header{
     font-size: 21px;
 } 
 
-.content-section .content p {
+.content-section .content-nos p {
     margin-top: 10px; 
     font-family: sans-serif;
     font-size: 17px;
     line-height: 1.5;
 } 
  
-.content-section .content .button{
+.content-section .content-nos .button{
     margin-top: 30px;
 } 
 
-.content-section .content .button a{
+.content-section .content-nos .button a{
     background-color: #3d3d3d;
     padding: 12px 40px;
     text-decoration: none; 
@@ -204,7 +303,7 @@ header{
     letter-spacing: 1.5px;
 }
  
-.content-section .content .button a:hover{
+.content-section .content-nos .button a:hover{
     background-color: aquamarine;
     color: #fff;
 } 
@@ -259,13 +358,14 @@ header{
     .content-section .title{
         text-align: center;
         font-size: 19px;
+        padding: 30px;
     }
      
-    .content-section .content .button{
+    .content-section .content-nos .button{
         text-align: center;
     }
      
-    .content-section .content .button a{
+    .content-section .content-nos .button a{
         padding: 9px 30px;
     }  
 
@@ -303,7 +403,7 @@ header{
     position: relative; 
     width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
+    padding: 0 200px;
     background-color: #ddd;
 } 
  
@@ -385,7 +485,7 @@ footer {
  
 .inputBox textarea{ 
     padding: 10px; 
-    font-size: 1.1em; 
+    font-size: 1em; 
     outline: none; 
     color: #fff;
     background-color: #1e1e1e;
@@ -448,22 +548,29 @@ footer {
     text-decoration: none;
     font-size: 1.1em;
 } 
- 
+
 .sci{
-    margin-top: 115px; 
+    margin-top: 115px;
     display: flex;
+    transition: 0.3s ease;
 }
-  
-.sci li{ 
-    list-style: none;
-    margin-right: 15px;
-}
-  
+
 .sci li a{
-    color: #515151;
-    font-size: 2em;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.6em;
+    transition: 0.3s ease;
 }
-  
+
+.sci li a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.sci li a:hover{
+    display: block;
+    transform: scale(1.3);
+    color: #11101b;
+}
 @media(max-width: 900px){
      
     .box{
