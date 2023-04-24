@@ -243,6 +243,128 @@ header{
     }
 }
 
+/* Rutinas */
+.encabezado-rutinas .titulo{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 2em;
+    padding: 50px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    color: #fff;
+    background: #11101b;
+}
+.container-rutinas{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#nuestras-rutinas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestras-rutinas .row{
+    justify-content: space-around;
+}
+
+#nuestras-rutinas .container-rutinas{
+    padding: 100px 0px;
+}
+
+#nuestras-rutinas h5{
+    margin-top: 0; 
+    font-size: 3em;
+    color: #fff;
+}
+
+#nuestras-rutinas p{ 
+    color: #fff;
+    font-size: 1.25em;
+}
+
+#nuestras-rutinas .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+#nuestras-rutinas .card:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/espalda.jpg");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/pectorales.jpg");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/piernas2edit.jpg");
+}
+
+.card:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/biceps-edit.jpg");
+}
+
+.card:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/triceps.webp");
+}
+
+.card:last-child{ 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/Img/abdominales.jpg");
+}
+
+@media (max-width: 900px) {
+.encabezado-cursos .titulo{
+    text-align: center;
+    padding: 110px;
+    padding-bottom: 70px;
+}
+    
+#nuestras-rutinas .card {
+    display: flex;
+    justify-content: center;
+    }
+}
  /* Nosotros */ 
 .section{
     width: 100%;
@@ -382,8 +504,10 @@ header{
     align-items: center;
     font-size: 2em;
     padding: 50px;
+    padding-bottom: 60px;
     font-weight: bold;
-    background: #ddd;
+    color: #fff;
+    background: #11101b;
 }    
 
 /* Contacto: */
@@ -395,8 +519,10 @@ header{
     align-items: center;
     font-size: 2em;
     padding: 50px;
+    padding-bottom: 60px;
     font-weight: bold;
-    background: #ddd;
+    color: #fff;
+    background: #11101b;
 } 
 
 .contactUs{
@@ -421,19 +547,7 @@ header{
     color: #fff;
 } 
 
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100, 100, 100);
-} 
 
-footer {
-    height: 10vh; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
- 
 .box{
     position: relative; 
     display: grid;
@@ -444,7 +558,7 @@ footer {
     grid-gap: 20px;
     padding-top: 20px;
 }
- 
+
 .form h3{
     color: #515151; 
     font-weight: 500; 
@@ -457,23 +571,23 @@ footer {
     position: relative;
     width: 100%;
 }
-  
+
 .formBox .row50{
     display: flex; 
     gap: 20px;
 } 
- 
+
 .inputBox{  
     display: flex; 
     flex-direction: column;
     margin-bottom: 10px;
     width: 50%;
 }
- 
+
 .formBox .row100 .inputBox{ 
     width: 100%;
 }
- 
+
 .inputBox input{
     padding: 10px; 
     font-size: 0.8em; 
@@ -482,10 +596,10 @@ footer {
     border: 1px solid #333;
     color: #fff;
 } 
- 
+
 .inputBox textarea{ 
     padding: 10px; 
-    font-size: 1em; 
+    font-size: 0.85em; 
     outline: none; 
     color: #fff;
     background-color: #1e1e1e;
@@ -495,7 +609,7 @@ footer {
     min-height: 175px; 
     margin-bottom: 10px;
 }
-  
+
 .inputBox input[type="submit"]{
     cursor: pointer;
     background: #1e1e1e; 
@@ -505,21 +619,21 @@ footer {
     resize: none; 
     padding: 5px 30px;
 }
- 
+
 .inputBox ::placeholder{
     color: #999;
 } 
 
- /* Info  */ 
- 
- 
+/* Info  */ 
+
+
 .info h3{
     color: #515151;
     font-weight: 500; 
     font-size: 1.4em; 
     margin-bottom: 30px;
 }
- 
+
 .info .infoBox div{
     display: flex;
     color: #515151;
@@ -537,12 +651,12 @@ footer {
     font-size: 1.5em;  
     margin-right: 5px;
 } 
- 
+
 .info .infoBox div p{
     color: #515151; 
     font-size: 1.1em; 
 }
- 
+
 .info .infoBox div a{ 
     color: #515151; 
     text-decoration: none;
@@ -556,7 +670,7 @@ footer {
 }
 
 .sci li a{
-    color: #fff;
+    color: #515151;
     margin-right: 15px;
     font-size: 1.6em;
     transition: 0.3s ease;
@@ -572,26 +686,40 @@ footer {
     color: #11101b;
 }
 @media(max-width: 900px){
-     
+    
     .box{
         grid-template-columns: 1fr;
         grid-template-rows: auto; 
         grid-template-areas: 
           "form"
           "info";
-    }
-    
-    .formBox .row50{ 
-       display: flex; 
-       gap: 0; 
-       flex-direction: column; 
-    }
-
-    .inputBox{
-        width: 100%;
-    }
-    
-    .contact{
-        padding: 30px;
+        }
+        
+        .formBox .row50{ 
+            display: flex; 
+            gap: 0; 
+            flex-direction: column; 
+        }
+        
+        .inputBox{
+            width: 100%;
+        }
+        
+        .contact{
+            padding: 30px;
+        } 
     } 
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+    } 
+    
+footer {
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #11101b;
 }
