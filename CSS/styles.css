@@ -306,7 +306,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/espalda.jpg");
+    ,url("/Img/espalda.jpg");
 }
 
 .card:nth-child(2){
@@ -315,7 +315,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/pectorales.jpg");
+    ,url("/Img/pectorales.jpg");
 }
 
 .card:nth-child(3){
@@ -324,7 +324,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/piernas2edit.jpg");
+    ,url("/Img/piernas2edit.jpg");
 }
 
 .card:nth-child(4){
@@ -333,7 +333,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/biceps-edit.jpg");
+    ,url("/Img/biceps-edit.jpg");
 }
 
 .card:nth-child(5){
@@ -342,7 +342,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/triceps.webp");
+    ,url("/Img/triceps.webp");
 }
 
 .card:last-child{ 
@@ -351,7 +351,7 @@ header{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("/img/abdominales.jpg");
+    ,url("/Img/abdominales.jpg");
 }
 
 @media (max-width: 900px) {
