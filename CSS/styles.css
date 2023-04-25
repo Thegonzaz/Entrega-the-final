@@ -229,6 +229,9 @@ header{
 }
 
 @media screen and (max-width: 900px){
+    .padd{
+        padding: 50px 100px;
+    }
     .home{
         margin-top: 45px;
     }
