@@ -126,7 +126,7 @@ header .navigation.active .navigation-items{
 
 .menu-btn.active{
     z-index: 999;
-    background: url(/Img/Cross_icon_\(white\).svg.png)no-repeat;
+    background: url(/Img/Cross_icon_white.svg.png)no-repeat;
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
@@ -369,7 +369,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/espalda.jpg");
+    ,url("Img/espalda.jpg");
 }
 
 .card:nth-child(2){
@@ -378,7 +378,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/pectorales.jpg");
+    ,url("Img/pectorales.jpg");
 }
 
 .card:nth-child(3){
@@ -387,7 +387,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/piernas2edit.jpg");
+    ,url("Img/piernas2edit.jpg");
 }
 
 .card:nth-child(4){
@@ -396,7 +396,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/biceps-edit.jpg");
+    ,url("Img/biceps-edit.jpg");
 }
 
 .card:nth-child(5){
@@ -405,7 +405,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/triceps.webp");
+    ,url("Img/triceps.webp");
 }
 
 .card:last-child{ 
@@ -414,7 +414,7 @@ header .navigation.active .navigation-items{
         rgba(0,0,0,0.5), 
         rgba(0,0,0,0.5)
     ) 
-    ,url("img/abdominales.jpg");
+    ,url("Img/abdominales.jpg");
 }
 
 @media (max-width: 900px) {
