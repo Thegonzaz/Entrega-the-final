@@ -1,4 +1,4 @@
-const menuBtn = document.querySelector(".nav-btn");
+const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 
 menuBtn.addEventListener("click", () => {
