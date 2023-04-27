@@ -115,7 +115,7 @@ header .navigation.active .navigation-items{
 }
 
 .menu-btn{
-    background: url(/Img/1024px-Hamburger_icon_white.svg.png)no-repeat;
+    background: url(gitImg/1024px-Hamburger_icon_white.svg.png)no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
@@ -126,7 +126,7 @@ header .navigation.active .navigation-items{
 
 .menu-btn.active{
     z-index: 999;
-    background: url(/Img/Cross_icon_white.svg.png)no-repeat;
+    background: url(Img/Cross_icon_white.svg.png)no-repeat;
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
