@@ -1,0 +1,33 @@
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// Globales
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+// Variables
+
+$color-black: #111;
+$color-white: #fff;
+$color-bg-img: rgba(1, 1, 1, 0.5);
+$color-a-bf: #222;
+$color-box-shadow: rgb(1, 1, 1, 20%);
+$color-bg-home: #11101b;
+$color-bg-home-bf: rgba(251, 3, 3, 0.034);
+$color-nav-bt: rgba(255, 255, 255, 0.5);
+$color-ns-rut: rgb(30, 30, 30);
+$color-nos-bg: #ddd;
+$color-cont-bg: #1e1e1e;
+$color-imp-box: rgba(0, 0, 0, 0.3);
+$color-social-a: #616161;
+$color-social-hover: #313131;
+$color-contact-bg: #ddd;
+$color-form-h3: #515151;
+$color-footer: #151515;
