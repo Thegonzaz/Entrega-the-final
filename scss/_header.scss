@@ -1,0 +1,59 @@
+//Navbar
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background: $color-black;
+
+    .brand {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        :hover {
+            color: $color-white;
+        }
+    }
+
+    .navigation {
+        position: relative;
+
+        a:before {
+            content: '';
+            position: absolute;
+            background: $color-white;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease;
+
+        }
+
+        a:hover:before {
+            width: 100%;
+            background: $color-white;
+        }
+    }
+}
+
+.navigation-items a {
+    position: relative;
+    color: $color-white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+
+}

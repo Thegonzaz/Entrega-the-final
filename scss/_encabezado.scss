@@ -1,0 +1,12 @@
+.encabezado .titulo {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 90px 0 30px 0px;
+    color: $color-white;
+    background: $color-black;
+    margin-bottom: inherit;
+    font-weight: normal;
+}

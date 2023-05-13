@@ -200,8 +200,9 @@ header .navigation a:hover:before {
   padding: 90px 0 30px 0px;
   color: #fff;
   background: #111;
-}
-
+  margin-bottom: inherit;
+  font-weight: normal;
+} /* Rutinas */
 /* Rutinas */
 #nuestras-rutinas {
   background-color: rgb(30, 30, 30);
@@ -220,7 +221,7 @@ header .navigation a:hover:before {
 }
 #nuestras-rutinas p {
   color: #fff;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 #nuestras-rutinas .card {
   background-position: center center;
@@ -260,6 +261,7 @@ header .navigation a:hover:before {
   margin: auto;
 }
 
+/* Nosotros */
 /* Nosotros */
 .section {
   display: flex;
@@ -307,7 +309,7 @@ header .navigation a:hover:before {
 }
 .section .content-section h3 {
   margin-top: 20px;
-  color: #5d5d5d;
+  color: #ddd;
   font-size: 21px;
 }
 .section .content-section .content-nos p {
@@ -373,12 +375,13 @@ header .navigation a:hover:before {
 }
 
 /* Contacto: */
+/* Contacto: */
 .contactUs {
   position: relative;
   display: flex;
   text-align: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Img/3.jpg");
   background-repeat: no-repeat;
@@ -526,7 +529,7 @@ header .navigation a:hover:before {
 
 /* Footer */
 footer {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -534,7 +537,7 @@ footer {
 }
 footer p {
   margin: 0;
-  padding: 12px;
+  padding: 15px;
   color: #616161;
 }
 

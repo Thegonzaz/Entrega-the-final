@@ -1,0 +1,178 @@
+/* Contacto: */
+.contactUs {
+    position: relative;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;
+    min-height: 100vh; 
+    color: white; 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../Img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    padding: 0 100px;
+
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "form info";
+    grid-gap: 20px;
+    padding-top: 50px;
+}
+
+.form {
+    grid-area: form;
+
+    h3 {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+}
+
+.info {
+    grid-area: info;
+}
+
+.contact {
+    padding: 40px;
+    color: $color-white;
+}
+
+/* form */
+.formBox {
+    position: relative;
+    width: 100%;
+
+    .row50 {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .row100 .inputBox {
+        width: 100%;
+
+    }
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+
+    input {
+        padding: 10px;
+        font-size: 0.8em;
+        outline: none;
+        background-color: $color-cont-bg;
+        border: 1px solid #333;
+        color: $color-white;
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: 0.85em;
+        outline: none;
+        color: $color-white;
+        background-color: $color-cont-bg;
+        border: 1px solid $color-social-hover;
+        resize: none;
+        width: 100%;
+        min-height: 175px;
+        margin-bottom: 10px;
+    }
+
+    input [type="submit"] {
+        cursor: pointer;
+        background: $color-cont-bg;
+        border: solid 1px,
+            $color-imp-box;
+        color: $color-white;
+        resize: none;
+        padding: 5px 30px;
+    }
+
+    ::placeholder {
+        color: $color-nav-bt;
+    }
+
+}
+
+/* Info  */
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+    }
+
+    .infoBox div {
+        display: flex;
+        color: $color-white;
+        align-items: center;
+        margin-bottom: 10px;
+
+        span {
+            min-width: 40px;
+            height: 40px;
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+
+        p {
+            color: $color-white;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.sci {
+    display: flex;
+    transition: 0.3s ease;
+
+    li a {
+        color: $color-white;
+        margin-right: 15px;
+        font-size: 1.6em;
+        transition: 0.3s ease;
+
+    }
+
+    a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    a:hover {
+        display: block;
+        transform: scale(1.3);
+        color: $color-bg-home;
+    }
+}

@@ -1,0 +1,13 @@
+footer {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: $color-footer;
+
+    p {
+        margin: 0;
+        padding: 15px;
+        color: $color-social-a;
+    }
+}

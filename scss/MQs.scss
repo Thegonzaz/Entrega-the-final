@@ -1,0 +1,205 @@
+// MQ NAVBAR //
+
+@media (max-width: 1040px) {
+    header {
+        padding: 12px 20px;
+
+        .navigation {
+            display: none;
+
+            .navigation-items a {
+                color: $color-white;
+                font-size: 1.2em;
+                margin: 20px;
+
+                a:before {
+                    background: $color-a-bf;
+                    height: 5px;
+                }
+            }
+        }
+
+        .navigation.active {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color-bg-img;
+
+            .navigation-items {
+                background: $color-black;
+                width: 600px;
+                max-width: 600px;
+                margin: 20px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0 5px 25px $color-box-shadow;
+            }
+        }
+
+    }
+
+    .menu-btn {
+        background: url(../Img/1024px-Hamburger_icon_white.svg.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active {
+        z-index: 999;
+        background: url(../Img/Cross_icon_white.svg.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+
+    .media-icons {
+        right: 15px;
+    }
+}
+
+// MQ INDEX //
+
+@media screen and (max-width: 900px) {
+    .padd {
+        padding: 0px 30px;
+    }
+
+    .slider-navigation {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .home .content {
+        width: 100%;
+        padding-bottom: 0;
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+    }
+
+}
+
+@media (max-width: 560px) {
+    .content h1 {
+        font-size: 3em;
+        line-height: 60px;
+    }
+}
+
+// MQ RUTINAS //
+
+@media (max-width: 900px) {
+    .encabezado-cursos .titulo {
+        text-align: center;
+        padding: 110px;
+        padding-bottom: 70px;
+    }
+
+    #nuestras-rutinas .card {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// MQ NOSOTROS //
+
+@media screen and (max-width: 900px) {
+    .section .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+
+        .content-section {
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+
+            .title {
+                text-align: center;
+                font-size: 19px;
+                padding: 30px;
+            }
+
+            .button {
+                text-align: center;
+
+                a {
+                    padding: 9px 30px;
+                }
+            }
+
+            .social {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                padding-bottom: 9px;
+            }
+        }
+
+        .image-section {
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+// MQ CONTACTO //
+
+@media(max-width: 900px) {
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info";
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .contactUs {
+        padding: 0 10px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+}
