@@ -7,7 +7,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".img-slide");
+const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
 
 var sliderNav = function(manual){

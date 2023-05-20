@@ -1,7 +1,15 @@
 /* Rutinas */
 
 #nuestras-rutinas {
-    background-color: $color-ns-rut;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("https://i.postimg.cc/QCy9Py2G/5.jpg"); //background
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
     color: $color-white;
     text-align: center;
 
